@@ -11,13 +11,13 @@ const StudentList = () => {
 
   return (
     <div className="student-list">
-      <h2>Student List</h2>
+      <h2 style={{ borderBottom: '3px solid #000', paddingBottom: '10px' }}>Student List </h2>
       <ul>
         {studentsData.map((student) => (
           <li key={student.id} className="student-item">
             <strong>Name:</strong> {student.name},{' '}
             <strong>Age:</strong> {student.age}
-            <ul className="enrolled-courses">
+            <ul className="enrolled-courses" >
               <strong>Enrolled courses:</strong>
               {student.courses.map((courseId) => (
                 <li key={courseId}>{getCourseName(courseId)}</li>

@@ -1,20 +1,22 @@
 
 .student-list {
-    background-color: #fd0000;
+    background-color: #808080;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 8px; /* Rounded corners */
     margin-bottom: 20px;
   }
   
   .student-item {
     background-color: #ffffff;
     margin-bottom: 10px;
+    border-radius: 8px; /* Rounded corners */
   }
   
   .enrolled-courses {
-    background-color: #0008fd;
+    
     list-style-type: square;
     margin-top: 5px;
     margin-left: 20px;
+    border-radius: 8px; /* Rounded corners */
   }
   
