@@ -1,6 +1,7 @@
 import React from 'react';
 import studentsData from '../data/students.json';
 import coursesData from '../data/courses.json';
+import './StudentList.css'
 
 const StudentList = () => {
   const getCourseName = (courseId) => {
@@ -9,14 +10,14 @@ const StudentList = () => {
   };
 
   return (
-    <div>
+    <div className="student-list">
       <h2>Student List</h2>
       <ul>
         {studentsData.map((student) => (
-          <li key={student.id}>
+          <li key={student.id} className="student-item">
             <strong>Name:</strong> {student.name},{' '}
             <strong>Age:</strong> {student.age}
-            <ul>
+            <ul className="enrolled-courses">
               <strong>Enrolled courses:</strong>
               {student.courses.map((courseId) => (
                 <li key={courseId}>{getCourseName(courseId)}</li>

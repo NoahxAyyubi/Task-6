@@ -1,0 +1,20 @@
+
+.student-list {
+    background-color: #fd0000;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .student-item {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .enrolled-courses {
+    background-color: #0008fd;
+    list-style-type: square;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  
